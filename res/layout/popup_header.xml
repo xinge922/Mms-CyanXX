@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/FromLinearLayout"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="left">
+  <ImageView
+    android:src="@android:drawable/ic_dialog_info"
+    android:id="@+id/FromImageView"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:scaleType="center"
+    android:layout_height="wrap_content" android:padding="5sp"/>
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/FromTextLinearLayout" android:padding="5sp">
+  
+   <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_gravity="center"
+	  android:padding="1sp">
+     <!--  
+    <TextView
+      android:id="@+id/FromTextView"
+      android:layout_width="wrap_content"
+      android:gravity="center_vertical"
+      android:autoLink="phone"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+	  android:singleLine="true"
+      android:layout_height="wrap_content"
+      android:text="Text Here"
+      android:ellipsize="marquee"
+      android:paddingBottom="2sp"/>
+      --> 
+      <TextView
+      android:id="@+id/FromTextView"
+      android:layout_width="wrap_content"
+      android:gravity="center_vertical"
+      android:autoLink="phone"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:maxLines="1"
+      android:maxLength = "15"
+      android:layout_height="wrap_content"
+      android:ellipsize="end" android:paddingBottom="2sp"/>
+        
+      
+      <TextView android:id="@+id/city" 
+      android:layout_width="wrap_content" 
+      android:textColor="?android:attr/textColorPrimaryDisableOnly" 
+      android:textAppearance="?android:attr/textAppearanceSmall" 
+      android:layout_height="wrap_content" 
+      android:layout_alignParentRight="true" 
+      android:layout_alignParentTop="true"
+      android:maxLines="1" 
+      android:paddingLeft = "10sp"/>
+
+    </LinearLayout>  
+      
+      
+    <TextView
+      android:id="@+id/HeaderTextView"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:textColor="?android:attr/textColorPrimaryDisableOnly"
+      android:text="@string/new_text_at"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" android:paddingTop="2sp"/>
+  </LinearLayout>
+</LinearLayout>
